@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+  </head>
+  <body>
+    <header>
+      <!-- container -->
+      <div class="container">
+          <!-- header content -->
+          <div class="header_content">
+              <!-- header logo -->
+              <div class="header_logo">
+                  <a href="./index.html">Sport Gear</a>
+              </div>
+              <!-- end header logo -->
+              <!-- Navigation -->
+              <nav>
+                  <ul>
+                      <li class="active">
+                          <a  href="./index.html">Home</a>
+                      </li>
+                      <li>
+                          <a href="#">About</a>
+                      </li>
+                      <li>
+                          <a href="#">Shop</a>
+                      </li>
+                      <li>
+                          <a href="#">Blog</a>
+                      </li>
+                      <li>
+                        <a href="./app/views/register.html">Register</a>
+                      </li>
+                  </ul>
+              </nav>
+              <!-- end navigator -->
+          </div>
+          <!-- End header content -->
+      </div>
+      <!-- end container -->
+  </header>
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./../../img/1389.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./../../img/1246.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./../../img/3870360.jpg" class="d-block w-100" alt="...">
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <section class="product container mt-4">
+    <h2 class="text-center fw-bold">--- Our Products ---</h2>
+    <div class="product_content" id="divProductContent">
+
+    </div>
+  </section>
+  <section class="about mt-5 p-5 w-100 bg-white">
+    <div class="row text-center">
+      <div class="col-sm-6">
+        <h4>GỌI MUA HÀNG ONLINE (08:00 - 21: 00 mỗi ngày)</h4>
+        <p>1900.633.349</p>
+        <h4>GÓP Ý & KHIẾU NẠI (08:30 - 20:30)</h4>
+        <p>1900.633.349</p>
+      </div>
+      <div class="col-sm-6">
+        <h4>HỆ THỐNG CỬA HÀNG</h4>
+        <p>26 Châu Văn Tiếp, P.Lái Thiêu, TX.Thuận An,Bình Dương</p>
+        <p>26 Châu Văn Tiếp, P.Lái Thiêu, TX.Thuận An,Bình Dương</p>
+        <p>26 Châu Văn Tiếp, P.Lái Thiêu, TX.Thuận An,Bình Dương</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="w-100 bg-white p-3 bg-opacity-75 text-center">
+      <h3>© 2020. All rights reserved.</h3>
+    </div>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.js" integrity="sha512-RjvSEaeDqPCfUVQ9kna2/2OqHz/7F04IOl1/66LmQjB/lOeAzwq7LrbTzDbz5cJzlPNJ5qteNtHR56XaJSTNWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- <script src="./app/views/detail.html"></script> -->
+    <script type="module" src="./app/controllers/index.js"></script>
+</body>
+</html>
