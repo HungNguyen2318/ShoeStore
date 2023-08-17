@@ -1,0 +1,54 @@
+// MIXIN : build sẵn các nhóm thuộc tính css, có thể truyền tham số vào như function.
+@mixin styleTitle ($fs) {
+    font-weight: $fw-title;
+    color: $color-blue-1;
+    font-size: $fs;
+}
+
+@mixin styleContent () {
+    font-weight: $fw-content;
+    color: $color-blue-2;
+    font-size: $fs-content;
+}
+
+@mixin styleSubTitle ($fs) {
+    font-size: $fs;
+    font-weight: $fw-sub-title ;
+    color: $color-blue-2;
+}
+
+@mixin styleButton(){
+    border: 2px solid $color-blue-1;
+    background-color: $color-bg;
+    color: $color-blue-1;
+    border-radius: 8px;
+    transition: all 0.5s;
+    padding: 15px 25px;
+    cursor: pointer;
+    &:hover {
+        border: 2px solid $color-bg;
+        background-color: $color-blue-1;
+        color: $color-bg;
+    }
+    i {
+        margin-right: 10px;
+    }
+}
+
+@mixin styleButton2($box-shadow){
+    box-shadow: $box-shadow;
+    border: 2px solid $color-blue-1;
+    background-color: $color-blue-1;
+    color: $color-bg;
+    border-radius: 8px;
+    transition: all 0.5s;
+    padding: 15px 25px;
+    cursor: pointer;
+    &:hover {
+        background-color: $color-bg;
+        color: $color-blue-1;
+    }
+    i {
+        margin-right: 10px;
+    }
+}

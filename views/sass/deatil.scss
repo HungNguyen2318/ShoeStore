@@ -1,0 +1,39 @@
+@import './variable/variable';
+@import './mixin/mixin';
+
+.product_detail {
+    #relation_product {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        @media screen and (max-width:992px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .item {
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            border-radius: 8px;
+            background-color: white;
+            img {
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                width: 90%;
+                margin: 5%;
+                border-radius: 8px;            
+            }
+
+            h3 {
+                margin: 0 5% 5%;
+                @include styleTitle(25px);
+            }
+
+            p {
+                @include styleSubTitle(18px);
+                margin: 0 5% 5%;
+            }
+            button {
+                width: 50%;
+                @include styleButton2(unset);
+                margin-bottom: 20px;
+            }  
+        }
+    }
+}

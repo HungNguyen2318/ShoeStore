@@ -1,0 +1,21 @@
+// Biến (Variable)
+// Biến trong scss giúp lưu trữ các giá trị sử dụng nhiều 
+// lần như màu sắc, px, font-weight,..
+
+$color-blue-1 : #2b72dc;
+$color-blue-2 : #1E345E;
+$color-bg : #F6F9FE;
+
+// Biến về độ dày chữ
+$fw-title : bold;
+$fw-sub-title : 600;
+$fw-content : 400;
+
+// biến về kích thước chữ
+$fs-title : 60px;
+$fs-sub-title : 20px;
+$fs-section-title : 35px;
+$fs-content : 16px;
+
+// Biến về box-shadow
+$box-shadow : white 0px 5px 15px;
